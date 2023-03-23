@@ -82,8 +82,8 @@ const Page = () => {
               alt="hero_inage"
             />
           </div> */}
-          <div className="  ">
-            <img className=" " src={herobg} alt="hero_inage" />
+          <div className=" relative    ">
+            <img className="z-50" src={herobg} alt="hero_inage" />
           </div>
         </section>
       </section>

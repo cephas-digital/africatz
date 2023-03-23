@@ -1,4 +1,5 @@
 import { TestimonialsData } from "./data";
+import { motion } from "framer-motion";
 const Testimonials = () => {
   return (
     <main className="py-10 bg-darker text-white my-10 px-3 md:px-8 lg:px-24">
@@ -7,9 +8,12 @@ const Testimonials = () => {
           Our Customers Speaks
         </h1>
         <section className="flex flex-wrap lg:w-[85vw] md:w-[100vw] md:flex-row flex-col items-center justify-center md:justify-between text-darker  ">
-          {TestimonialsData.map((data) => {
+          {TestimonialsData.map((data, index) => {
             return (
-              <div
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, scaleX: 0.6 }}
+                whileInView={{ opacity: 1, scaleX: 1.0 }}
                 style={{ boxShadow: "0px 20px 50px rgba(244, 158, 17, 0.3)" }}
                 className="md:w-56 my-2 md:my-0 w-full mx-auto bg-white p-5"
               >
@@ -23,7 +27,7 @@ const Testimonials = () => {
                     <h2>{data.userTitle}</h2>
                   </div>
                 </div>
-              </div>
+              </motion.div>
             );
           })}
         </section>
