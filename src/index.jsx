@@ -19,6 +19,7 @@ import ace from "./assets/ace.png";
 import brent from "./assets/brent.png";
 
 import { TypeAnimation } from "react-type-animation";
+import { motion } from "framer-motion";
 
 const Page = () => {
   return (
@@ -30,23 +31,31 @@ const Page = () => {
         <Header />
         <section className=" relative block md:flex py-1 justify-between items-center">
           <div className="max-w-md mt-10  ">
-            <h1
-              style={{ lineHeight: "3.5rem" }}
-              className="font-segoe  text-xl leading-loose md:text-5xl  tracking-wide font-bold leading-loose"
+            <motion.h1
+              initial={{ scaleX: 0.5, scaleY: 0.3, opacity: 0.3 }}
+              animate={{ opacity: 1, scaleX: 1.0, scaleY: 1 }}
+              transition={{ type: "spring", stiffness: 100 }}
+              transition={{
+                duration: 1.2,
+                delay: 0.1,
+              }}
+              //   style={{ lineHeight: "3.5rem" }}
+              className="font-segoe  text-4xl leading-snug md:text-5xl  tracking-wide font-bold leading-loose"
             >
-              <TypeAnimation
+              Fast and secure checkout process for a hassle-free shopping
+              {/* <TypeAnimation
                 sequence={[
                   "Fast and secure checkout process for a hassle-free shopping.",
                 ]}
                 speed={50}
                 repeat={10}
                 cursor={false}
-              />
-            </h1>
+              /> */}
+            </motion.h1>
 
             <h1
-              style={{ lineHeight: "3.5rem" }}
-              className="bg-primary  font-segoe my-1 text-xl md:text-5xl  tracking-wide font-bold w-fit p-1 text-darker"
+              //   style={{ lineHeight: "3.5rem" }}
+              className="bg-primary  font-segoe my-1 text-4xl text-xl md:text-5xl  tracking-wide font-bold w-fit p-1 text-darker"
             >
               experience
             </h1>
@@ -88,18 +97,22 @@ const Page = () => {
         </section>
       </section>
       <section className="py-4 px-3 md:px-8 lg:px-24 bg-secondary">
-        <h1 className="text-center text-3xl my-3 font-segoe italic text-darker font-black">
+        <motion.h1
+          initial={{ opacity: 0, scaleX: 0.3, scaleY: 0.3 }}
+          whileInView={{ opacity: 1, scaleX: 1.0, scaleY: 1 }}
+          className="text-center text-3xl my-3 font-segoe italic text-darker font-black"
+        >
           Our Top Partners
-        </h1>
-        {/* <marquee> */}
-        <div className="flex flex-wrap items-center justify-between my-6">
-          <img src={shoprite} alt="shoprite" />
-          <img src={jumia} alt="jumia" />
-          <img src={ace} alt="ace" />
-          <img src={brent} alt="brent" />
-          <img src={ace} alt="ace" />
-        </div>
-        {/* </marquee> */}
+        </motion.h1>
+        <marquee>
+          <div className="flex flex-wrap items-center justify-between my-6">
+            <img className="md:w-auto w-12" src={shoprite} alt="shoprite" />
+            <img className="md:w-auto w-12" src={jumia} alt="jumia" />
+            <img className="md:w-auto w-12" src={ace} alt="ace" />
+            <img className="md:w-auto w-12" src={brent} alt="brent" />
+            <img className="md:w-auto w-12" src={ace} alt="ace" />
+          </div>
+        </marquee>
       </section>
 
       <Services />
@@ -109,7 +122,11 @@ const Page = () => {
       <Faqs />
       <Contact />
       <section className="bg-info flex items-center justify-center py-10">
-        <div className="md:w-2/5 w-full mx-auto text-center">
+        <motion.div
+          initial={{ opacity: 0, scaleX: 0.3, scaleY: 0.3 }}
+          whileInView={{ opacity: 1, scaleX: 1.0, scaleY: 1 }}
+          className="md:w-2/5 w-full mx-auto text-center"
+        >
           <h1 className="text-4xl font-segoe font-black text-darkest">
             Download Africartz to get started
           </h1>
@@ -133,7 +150,7 @@ const Page = () => {
               </div>
             </div>
           </section>
-        </div>
+        </motion.div>
       </section>
       <Footer />
     </main>

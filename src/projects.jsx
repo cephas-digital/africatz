@@ -1,6 +1,7 @@
 import sectionImg2 from "./assets/section2_img.png";
 import curve from "./assets/curve.png";
 import { ProjectData } from "./data";
+import { motion } from "framer-motion";
 const Projects = () => {
   return (
     <main className="py-4 px-3 md:px-8 lg:px-24">
@@ -18,14 +19,19 @@ const Projects = () => {
           />
         </section>
         <section className="max-w-xl">
-          <h1 className="text-3xl my-3 font-segoe italic  font-black">
-            Used and trusted by a community of millions
-          </h1>
-          <p className="font-nunito font-semibold leading-loose tracking-wider">
-            At <span className="text-primary">Africartz</span> , we're more than
-            just a retailer - we're a community of like-minded individuals who
-            love quality products and great service.
-          </p>
+          <motion.div
+            initial={{ opacity: 0, scaleX: 0.3, scaleY: 0.3 }}
+            whileInView={{ opacity: 1, scaleX: 1.0, scaleY: 1 }}
+          >
+            <h1 className="text-3xl my-3 font-segoe italic  font-black">
+              Used and trusted by a community of millions
+            </h1>
+            <p className="font-nunito font-semibold leading-loose tracking-wider">
+              At <span className="text-primary">Africartz</span> , we're more
+              than just a retailer - we're a community of like-minded
+              individuals who love quality products and great service.
+            </p>
+          </motion.div>
           <section className="flex flex-wrap justify-between  md:max-w-md">
             {ProjectData.map((data) => {
               return (

@@ -1,5 +1,6 @@
 import AboutImg from "./assets/section1_img.png";
 import ButtonComponent from "./components/button";
+import { motion } from "framer-motion";
 const About = () => {
   return (
     <main
@@ -8,9 +9,13 @@ const About = () => {
     >
       <div className="md:flex items-center justify-between">
         <section className="max-w-2xl">
-          <h1 className="text-3xl my-3 font-segoe italic  font-black">
+          <motion.h1
+            initial={{ opacity: 0, scaleX: 0.3, scaleY: 0.3 }}
+            whileInView={{ opacity: 1, scaleX: 1.0, scaleY: 1 }}
+            className="text-3xl my-3 font-segoe italic  font-black"
+          >
             About Africartz
-          </h1>
+          </motion.h1>
           <p className="py-3 leading-relaxed tracking-wider">
             Africartz is a gigantic online Global E-commerce advertising
             platform (“App”) in Africa designed for right vendors to provide,
