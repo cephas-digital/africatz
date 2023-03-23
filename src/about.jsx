@@ -2,7 +2,10 @@ import AboutImg from "./assets/section1_img.png";
 import ButtonComponent from "./components/button";
 const About = () => {
   return (
-    <main id="about" className="py-4 my-10 px-3 md:px-24  bg-darker text-white">
+    <main
+      id="about"
+      className="py-4 my-10 px-3 md:px-8 lg:px-24  bg-darker text-white"
+    >
       <div className="md:flex items-center justify-between">
         <section className="max-w-2xl">
           <h1 className="text-3xl my-3 font-segoe italic  font-black">

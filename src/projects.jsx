@@ -3,7 +3,7 @@ import curve from "./assets/curve.png";
 import { ProjectData } from "./data";
 const Projects = () => {
   return (
-    <main className="py-4 px-3 md:px-24">
+    <main className="py-4 px-3 md:px-8 lg:px-24">
       <div className="md:flex items-center justify-between">
         <section className="relative  ">
           <img

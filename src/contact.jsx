@@ -2,7 +2,7 @@ import ButtonComponent from "./components/button";
 import { ContactData } from "./data";
 const Contact = () => {
   return (
-    <main id="contact" className="py-4 bg-secondary px-3 md:px-24">
+    <main id="contact" className="py-4 bg-secondary px-3 md:px-8 lg:px-24">
       <h1 className="text-center text-3xl my-3 font-segoe italic text-darker font-black">
         Contact Us
       </h1>

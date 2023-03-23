@@ -9,11 +9,23 @@ const Header = () => {
   return (
     <>
       <header className="md:flex hidden items-center justify-between">
-        <div className="flex z-10 items-center p-2 basis-2/5 justify-between ">
+        <div className="flex  z-10 items-center p-2 basis-2/5 justify-between ">
           <Logo />
-          <ScrollIntoView selector="#home">Home</ScrollIntoView>
-          <ScrollIntoView selector="#contact">Contact</ScrollIntoView>
-          <ScrollIntoView selector="#about">About Us</ScrollIntoView>
+          <ScrollIntoView selector="#home">
+            <label className="hover:font-black hover:text-primary cursor-pointer">
+              Home
+            </label>
+          </ScrollIntoView>
+          <ScrollIntoView selector="#contact">
+            <label className="hover:font-black hover:text-primary cursor-pointer">
+              Contact
+            </label>
+          </ScrollIntoView>
+          <ScrollIntoView selector="#about">
+            <label className="hover:font-black hover:text-primary cursor-pointer">
+              About Us
+            </label>
+          </ScrollIntoView>
         </div>
 
         <ButtonComponent title="Get started" mode="light" />

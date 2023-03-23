@@ -3,7 +3,7 @@ import sectionImg from "./assets/section3_img.png";
 import question from "./assets/question_mark.png";
 const Faqs = () => {
   return (
-    <main className="py-4  px-3 md:px-24">
+    <main className="py-4  px-3 md:px-8 lg:px-24">
       <h1 className="text-center text-3xl my-3 font-segoe italic text-darker font-black">
         FAQs
       </h1>

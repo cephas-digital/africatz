@@ -4,12 +4,14 @@ import ButtonComponent from "./components/button";
 import twitter from "./assets/twitter.png";
 import messenger from "./assets/messenger.png";
 import linkedin from "./assets/linkedin.png";
+
+import ScrollIntoView from "react-scroll-into-view";
 const Footer = () => {
   return (
     <>
       <footer>
         <section
-          className="text-white py-10 md:px-24 px-3 md:flex  justify-between"
+          className="text-white py-10 md:px-8 lg:px-24 px-3 md:flex  justify-between"
           style={{ background: "#262626" }}
         >
           <div className="max-w-sm">
@@ -22,12 +24,21 @@ const Footer = () => {
             <ButtonComponent title="Get Started" />
           </div>
           <nav className="flex flex-col">
-            <a className="py-3" href="#">
-              About Us
-            </a>
-            <a className="py-3" href="#">
-              Contact
-            </a>
+            <ScrollIntoView className="py-3" selector="#home">
+              <label className="hover:font-black  hover:text-primary cursor-pointer">
+                Home
+              </label>
+            </ScrollIntoView>
+            <ScrollIntoView className="py-3" selector="#contact">
+              <label className="hover:font-black  hover:text-primary cursor-pointer">
+                Contact
+              </label>
+            </ScrollIntoView>
+            <ScrollIntoView className="py-3" selector="#about">
+              <label className="hover:font-black  hover:text-primary cursor-pointer">
+                About Us
+              </label>
+            </ScrollIntoView>
           </nav>
           <nav className="flex flex-col">
             <a className="py-3" href="#">

@@ -1,12 +1,12 @@
 import { TestimonialsData } from "./data";
 const Testimonials = () => {
   return (
-    <main className="py-10 bg-darker text-white my-10 px-3 md:px-24">
+    <main className="py-10 bg-darker text-white my-10 px-3 md:px-8 lg:px-24">
       <div className="md:flex items-center justify-between">
         <h1 className="md:text-3xl text-xl text-center md:text-start my-5  font-segoe font-bold">
           Our Customers Speaks
         </h1>
-        <section className="flex md:w-[85vw] md:flex-row flex-col items-center justify-center md:justify-between text-darker  ">
+        <section className="flex flex-wrap lg:w-[85vw] md:w-[100vw] md:flex-row flex-col items-center justify-center md:justify-between text-darker  ">
           {TestimonialsData.map((data) => {
             return (
               <div
