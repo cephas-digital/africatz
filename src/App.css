@@ -1,0 +1,25 @@
+body {
+  font-family: "Lato", sans-serif;
+}
+.primary-gradient {
+  background: linear-gradient(180deg, #fca311 0%, rgba(252, 163, 17, 0) 100%);
+}
+.light_shadow {
+  box-shadow: 10px 10px 0px 0px #fca311;
+}
+.dark_shadow {
+  box-shadow: 10px 10px 0px 0px #1b1b1b;
+}
+.mobile-nav__open {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 3rem;
+  transition: left 1.2s ease-in-out;
+}
+.mobile-nav__close {
+  position: fixed;
+  bottom: 0;
+  left: -1000px;
+  transition: left 1.2s ease-in-out;
+}
