@@ -14,7 +14,7 @@ const Footer = () => {
           className="text-white py-10 md:px-8 lg:px-24 px-3 md:flex  justify-between"
           style={{ background: "#262626" }}
         >
-          <div className="max-w-sm">
+          <div className="max-w-sm md:mb-0 mb-10">
             <Logo />
             <p className="my-5">
               Lorem ipsum dolor sit amet consectetur adipiscin eli a sit
@@ -40,6 +40,7 @@ const Footer = () => {
               </label>
             </ScrollIntoView>
           </nav>
+          <hr />
           <nav className="flex flex-col">
             <a className="py-3" href="#">
               Terms of Service
@@ -48,6 +49,7 @@ const Footer = () => {
               Privacy
             </a>
           </nav>
+          <hr />
           <nav className="flex flex-col">
             <a className="py-3" href="#">
               africartz@gmail.com

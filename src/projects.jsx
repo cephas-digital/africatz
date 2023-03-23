@@ -7,13 +7,26 @@ const Projects = () => {
     <main className="py-4 px-3 md:px-8 lg:px-24">
       <div className="md:flex items-center justify-between">
         <section className="relative  ">
-          <img
-            className="w-96 h-[616px]"
+          <motion.img
+            initial={{ x: 1000 }}
+            whileInView={{ x: 0 }}
+            className="w-96 hidden md:block h-[616px]"
             src={sectionImg2}
             alt="project details"
           />
-          <img
-            className="absolute scale-95 h-[600px] top-0"
+
+          <motion.img
+            initial={{ opacity: 0, scaleX: 0.3, scaleY: 0.3 }}
+            whileInView={{ opacity: 1, scaleX: 1.0, scaleY: 1 }}
+            className="w-96 md:hidden block h-[616px]"
+            src={sectionImg2}
+            alt="project details"
+          />
+
+          <motion.img
+            initial={{ opacity: 0, scaleX: 0.3, scaleY: 0.3 }}
+            whileInView={{ opacity: 1, scaleX: 1.0, scaleY: 1 }}
+            className="absolute scale-95 h-[600px] left-0 bottom-0 top-0"
             src={curve}
             alt="curve"
           />

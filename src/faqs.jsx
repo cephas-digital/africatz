@@ -1,6 +1,7 @@
 import { FaqsData } from "./data";
 import sectionImg from "./assets/section3_img.png";
 import question from "./assets/question_mark.png";
+import { motion } from "framer-motion";
 const Faqs = () => {
   return (
     <main className="py-4  px-3 md:px-8 lg:px-24">
@@ -15,7 +16,11 @@ const Faqs = () => {
         <section className="max-w-xl">
           {FaqsData.map((data) => {
             return (
-              <div>
+              <motion.div
+                initial={{ opacity: 0, scaleX: 0.3, scaleY: 0.3 }}
+                whileInView={{ opacity: 1, scaleX: 1.0, scaleY: 1 }}
+                transition={{ delay: 0.2 }}
+              >
                 <h1 className="font-bold text-md font-nunito  my-2">
                   {data.question}
                 </h1>
@@ -25,7 +30,7 @@ const Faqs = () => {
                 >
                   {data.answer}
                 </p>
-              </div>
+              </motion.div>
             );
           })}
         </section>
