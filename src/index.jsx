@@ -50,7 +50,7 @@ const Page = () => {
 
             <h1 className="font-poppins   text-4xl leading-snug md:text-5xl  tracking-wide font-bold leading-loose bg-primary p-0.5 w-fit">
               experience
-            </h1>
+            </h1>s
 
             <h6 className="my-5 font-poppins tracking-widest leading-loose font-normal">
               Explore our wide range of products and services

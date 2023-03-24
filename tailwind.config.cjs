@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     fontFamily: {
       lato: ["Lato", "sans-serif"],
-      poppins: ["Poppins', sans-serif"],
+      poppins: ["Poppins", "sans-serif"],
       nunito: ["Nunito", "sans-serif"],
       segoe: ["Noto Sans", "sans-serif"],
       rubik: ["Rubik", "sans-serif"],
