@@ -2,6 +2,7 @@ import Logo from "./components/logo";
 import Header from "./header";
 import Footer from "./footer";
 import herobg from "./assets/hero_image.png";
+import blur_light from "./assets/blur_light.png";
 
 import Services from "./services";
 import About from "./about";
@@ -34,33 +35,22 @@ const Page = () => {
             <motion.h1
               initial={{ scaleX: 0.5, scaleY: 0.3, opacity: 0.3 }}
               animate={{ opacity: 1, scaleX: 1.0, scaleY: 1 }}
-              transition={{ type: "spring", stiffness: 100 }}
               transition={{
+                type: "spring",
+                stiffness: 100,
                 duration: 1.2,
                 delay: 0.1,
               }}
-              //   style={{ lineHeight: "3.5rem" }}
               className="font-segoe  text-4xl leading-snug md:text-5xl  tracking-wide font-bold leading-loose"
             >
               Fast and secure checkout process for a hassle-free shopping
-              {/* <TypeAnimation
-                sequence={[
-                  "Fast and secure checkout process for a hassle-free shopping.",
-                ]}
-                speed={50}
-                repeat={10}
-                cursor={false}
-              /> */}
             </motion.h1>
 
-            <h1
-              //   style={{ lineHeight: "3.5rem" }}
-              className="bg-primary  font-segoe my-1 text-4xl text-xl md:text-5xl  tracking-wide font-bold w-fit p-1 text-darker"
-            >
+            <h1 className="font-segoe  text-4xl leading-snug md:text-5xl  tracking-wide font-bold leading-loose bg-primary p-2 w-fit">
               experience
             </h1>
 
-            <h6 className="mb-5 font-semibold">
+            <h6 className="my-5 font-rubik font-normal">
               Explore our wide range of products and services
             </h6>
             <section className="flex mt-10">
@@ -84,15 +74,20 @@ const Page = () => {
               </div>
             </section>
           </div>
-          {/* <div className=" md:-top-20 md:-right-10 top-0 relative md:absolute ">
-            <img
-              className="md:w-[800px] w-full "
-              src={herobg}
-              alt="hero_inage"
-            />
-          </div> */}
+
           <div className=" relative    ">
-            <img className="z-50" src={herobg} alt="hero_inage" />
+            <motion.img
+              initial={{ opacity: 0, scaleX: 0.3, scaleY: 0.3 }}
+              whileInView={{ opacity: 1, scaleX: 1.0, scaleY: 1 }}
+              className="z-50"
+              src={herobg}
+              alt="hero_image"
+            />
+            <img
+              className="absolute  z-10 -left-20 -bottom-20"
+              src={blur_light}
+              alt="blur_light"
+            />
           </div>
         </section>
       </section>
