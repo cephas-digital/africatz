@@ -17,9 +17,15 @@ const Faqs = () => {
           {FaqsData.map((data) => {
             return (
               <motion.div
-                initial={{ opacity: 0, scaleX: 0.3, scaleY: 0.3 }}
-                whileInView={{ opacity: 1, scaleX: 1.0, scaleY: 1 }}
-                transition={{ delay: 0.2 }}
+                initial={{ y: "100%" }}
+                whileInView={{ y: 0 }}
+                transition={{
+                  duration: 1.5,
+                  ease: "easeIn",
+                  type: "spring",
+                  stiffness: 50,
+                  mass: 0.8,
+                }}
               >
                 <h1 className="font-bold text-md font-nunito  my-2">
                   {data.question}

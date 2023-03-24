@@ -12,10 +12,17 @@ const Testimonials = () => {
             return (
               <motion.div
                 key={index}
-                initial={{ opacity: 0, scaleX: 0.6 }}
-                whileInView={{ opacity: 1, scaleX: 1.0 }}
+                initial={{ y: "100%" }}
+                whileInView={{ y: 0 }}
+                transition={{
+                  duration: 1.5,
+                  ease: "easeIn",
+                  type: "spring",
+                  stiffness: 50,
+                  mass: 0.8,
+                }}
                 style={{ boxShadow: "0px 20px 50px rgba(244, 158, 17, 0.3)" }}
-                className="md:w-56 my-2 md:my-0 w-full mx-auto bg-white p-5"
+                className="md:w-56 my-2 md:my-0 w-full text-sm text-darker font-nunito tracking-wider mx-auto bg-white p-5"
               >
                 <p className="text-sm font-bold tracking-wide leading-relaxed ">
                   {data.content}

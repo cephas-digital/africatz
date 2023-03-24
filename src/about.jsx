@@ -16,43 +16,63 @@ const About = () => {
           >
             About Africartz
           </motion.h1>
-          <motion.p
-            initial={{ opacity: 0, scaleX: 0.3, scaleY: 0.3 }}
-            whileInView={{ opacity: 1, scaleX: 1.0, scaleY: 1 }}
-            transition={{ delay: 0.2 }}
-            className="py-3 leading-relaxed tracking-wider"
-          >
-            Africartz is a gigantic online Global E-commerce advertising
-            platform (“App”) in Africa designed for right vendors to provide,
-            advertise and sell good unrivalled quality commodities (“Products”
-            “Services” “Publications”) as well as branded products that can
-            cater for demand to the emerging African consumer.{" "}
-          </motion.p>{" "}
-          <motion.p
-            initial={{ opacity: 0, scaleX: 0.3, scaleY: 0.3 }}
-            whileInView={{ opacity: 1, scaleX: 1.0, scaleY: 1 }}
-            transition={{ delay: 0.2 }}
-            className="py-3 leading-relaxed tracking-wider"
-          >
-            Africartz has brought convenience and reliability to the African
-            retail market by combining open thoughts with considerable market
-            research. Additionally, the local vendors can also benefit from the
-            improved access to a country-wide market, where they can set their
-            own prices and other key details.{" "}
-          </motion.p>{" "}
-          <motion.p
-            initial={{ opacity: 0, scaleX: 0.3, scaleY: 0.3 }}
-            whileInView={{ opacity: 1, scaleX: 1.0, scaleY: 1 }}
-            transition={{ delay: 0.2 }}
-            className="py-3 leading-relaxed tracking-wider"
-          >
-            Africartz is aspiring to emerge as the largest and most renowned
-            online retailing platform for trade in Africa at large. Africartz
-            has decided to employ payment on delivery services. This gives
-            customers the assurance and liberty that the quality of the product
-            they ordered can be checked on delivery before proceeding with the
-            payment.{" "}
-          </motion.p>
+          <div className="font-nunito font-light text-sm">
+            <motion.p
+              initial={{ y: "100%" }}
+              whileInView={{ y: 0 }}
+              transition={{
+                duration: 1.5,
+                ease: "easeIn",
+                type: "spring",
+                stiffness: 50,
+                mass: 0.8,
+              }}
+              className="py-3 leading-relaxed tracking-wider"
+            >
+              Africartz is a gigantic online Global E-commerce advertising
+              platform (“App”) in Africa designed for right vendors to provide,
+              advertise and sell good unrivalled quality commodities (“Products”
+              “Services” “Publications”) as well as branded products that can
+              cater for demand to the emerging African consumer.{" "}
+            </motion.p>
+            <motion.p
+              initial={{ y: "100%" }}
+              whileInView={{ y: 0 }}
+              transition={{
+                duration: 1.5,
+                ease: "easeIn",
+                type: "spring",
+                stiffness: 50,
+                mass: 0.8,
+              }}
+              className="py-3 leading-relaxed tracking-wider"
+            >
+              Africartz has brought convenience and reliability to the African
+              retail market by combining open thoughts with considerable market
+              research. Additionally, the local vendors can also benefit from
+              the improved access to a country-wide market, where they can set
+              their own prices and other key details.{" "}
+            </motion.p>{" "}
+            <motion.p
+              initial={{ y: "100%" }}
+              whileInView={{ y: 0 }}
+              transition={{
+                duration: 1.5,
+                ease: "easeIn",
+                type: "spring",
+                stiffness: 50,
+                mass: 0.8,
+              }}
+              className="py-3 leading-relaxed tracking-wider"
+            >
+              Africartz is aspiring to emerge as the largest and most renowned
+              online retailing platform for trade in Africa at large. Africartz
+              has decided to employ payment on delivery services. This gives
+              customers the assurance and liberty that the quality of the
+              product they ordered can be checked on delivery before proceeding
+              with the payment.{" "}
+            </motion.p>
+          </div>
           <div className="my-3">
             <ButtonComponent title="Learn More" />
           </div>
@@ -61,6 +81,13 @@ const About = () => {
           <motion.img
             initial={{ opacity: 0, scaleX: 0.3, scaleY: 0.3 }}
             whileInView={{ opacity: 1, scaleX: 1.0, scaleY: 1 }}
+            transition={{
+              duration: 1.5,
+              ease: "easeIn",
+              type: "spring",
+              stiffness: 50,
+              mass: 0.8,
+            }}
             src={AboutImg}
             className="md:hidden block"
             alt="product_image"

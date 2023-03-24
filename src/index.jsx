@@ -31,47 +31,47 @@ const Page = () => {
       >
         <Header />
         <section className=" relative block md:flex py-1 justify-between items-center">
-          <div className="max-w-md mt-10  ">
+          <div className="max-w-xl mt-10  ">
             <motion.h1
+              style={{ lineHeight: "4.5rem" }}
               initial={{ scaleX: 0.5, scaleY: 0.3, opacity: 0.3 }}
               animate={{ opacity: 1, scaleX: 1.0, scaleY: 1 }}
               transition={{
-                type: "tween",
-                stiffness: 1000,
-                bounce: 0.5,
-                damping: 100,
-                duration: 1.2,
-                delay: 0.05,
+                duration: 1.5,
+                ease: "easeIn",
+                type: "spring",
+                stiffness: 50,
+                mass: 0.8,
               }}
-              className="font-segoe  text-4xl leading-snug md:text-5xl  tracking-wide font-bold leading-loose"
+              className="font-poppins  text-3xl leading-loose md:text-5xl   font-medium "
             >
               Fast and secure checkout process for a hassle-free shopping
             </motion.h1>
 
-            <h1 className="font-segoe  text-4xl leading-snug md:text-5xl  tracking-wide font-bold leading-loose bg-primary p-2 w-fit">
+            <h1 className="font-poppins   text-4xl leading-snug md:text-5xl  tracking-wide font-bold leading-loose bg-primary p-0.5 w-fit">
               experience
             </h1>
 
-            <h6 className="my-5 font-rubik font-normal">
+            <h6 className="my-5 font-poppins tracking-widest leading-loose font-normal">
               Explore our wide range of products and services
             </h6>
-            <section className="flex mt-10">
-              <div className="flex w-40 cursor-pointer  mr-5 items-center justify-around primary-gradient p-2">
+            <section className="flex my-20 md:my-10">
+              <div className="flex md:w-40 w-32 cursor-pointer  mr-5 items-center justify-around primary-gradient p-1 md:p-2">
                 <BsApple size={25} />
                 {/* <img className="w-4" src={apple} alt="appstore" /> */}
                 <div>
                   {" "}
                   <p className="text-xs">Available Now</p>
-                  <h2 className="text-base font-bold">App Store</h2>
+                  <h2 className="text-base font-medium">App Store</h2>
                 </div>
               </div>
-              <div className="flex w-40 cursor-pointer mr-5 items-center justify-around primary-gradient p-2">
+              <div className="flex md:w-40 w-32 cursor-pointer mr-5 items-center justify-around primary-gradient p-1 md:p-2">
                 <IoLogoGooglePlaystore size={25} />
 
                 <div>
                   {" "}
                   <p className="text-xs">Available Now</p>
-                  <h2 className="text-base font-bold">Play Store</h2>
+                  <h2 className="text-base font-medium">Play Store</h2>
                 </div>
               </div>
             </section>
@@ -81,6 +81,13 @@ const Page = () => {
             <motion.img
               initial={{ opacity: 0, scaleX: 0.3, scaleY: 0.3 }}
               whileInView={{ opacity: 1, scaleX: 1.0, scaleY: 1 }}
+              transition={{
+                duration: 1.5,
+                ease: "easeIn",
+                type: "spring",
+                stiffness: 50,
+                mass: 0.8,
+              }}
               className="z-50"
               src={herobg}
               alt="hero_image"
@@ -122,6 +129,13 @@ const Page = () => {
         <motion.div
           initial={{ opacity: 0, scaleX: 0.3, scaleY: 0.3 }}
           whileInView={{ opacity: 1, scaleX: 1.0, scaleY: 1 }}
+          transition={{
+            duration: 1.5,
+            ease: "easeIn",
+            type: "spring",
+            stiffness: 50,
+            mass: 0.8,
+          }}
           className="md:w-2/5 w-full mx-auto text-center"
         >
           <h1 className="text-4xl font-segoe font-black text-darkest">

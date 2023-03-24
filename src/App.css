@@ -1,5 +1,5 @@
 body {
-  font-family: "Lato", sans-serif;
+  font-family: "nunito", sans-serif;
   overflow-x: hidden;
 }
 .primary-gradient {
@@ -23,4 +23,12 @@ body {
   bottom: 0;
   left: -1000px;
   transition: left 1.2s ease-in-out;
+}
+@media (max-width: 600px) {
+  .light_shadow {
+    box-shadow: 5px 5px 0px 0px #fca311;
+  }
+  .dark_shadow {
+    box-shadow: 5px 5px 0px 0px #1b1b1b;
+  }
 }

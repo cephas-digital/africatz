@@ -10,6 +10,13 @@ const Projects = () => {
           <motion.img
             initial={{ x: 1000 }}
             whileInView={{ x: 0 }}
+            transition={{
+              duration: 1.5,
+              ease: "easeIn",
+              type: "spring",
+              stiffness: 50,
+              mass: 0.8,
+            }}
             className="w-96 hidden md:block h-[616px]"
             src={sectionImg2}
             alt="project details"
@@ -18,6 +25,13 @@ const Projects = () => {
           <motion.img
             initial={{ opacity: 0, scaleX: 0.3, scaleY: 0.3 }}
             whileInView={{ opacity: 1, scaleX: 1.0, scaleY: 1 }}
+            transition={{
+              duration: 1.5,
+              ease: "easeIn",
+              type: "spring",
+              stiffness: 50,
+              mass: 0.8,
+            }}
             className="w-96 md:hidden block h-[616px]"
             src={sectionImg2}
             alt="project details"
@@ -26,6 +40,13 @@ const Projects = () => {
           <motion.img
             initial={{ opacity: 0, scaleX: 0.3, scaleY: 0.3 }}
             whileInView={{ opacity: 1, scaleX: 1.0, scaleY: 1 }}
+            transition={{
+              duration: 1.5,
+              ease: "easeIn",
+              type: "spring",
+              stiffness: 50,
+              mass: 0.8,
+            }}
             className="absolute scale-95 h-[600px] left-0 bottom-0 top-0"
             src={curve}
             alt="curve"
@@ -35,6 +56,13 @@ const Projects = () => {
           <motion.div
             initial={{ opacity: 0, scaleX: 0.3, scaleY: 0.3 }}
             whileInView={{ opacity: 1, scaleX: 1.0, scaleY: 1 }}
+            transition={{
+              duration: 1.5,
+              ease: "easeIn",
+              type: "spring",
+              stiffness: 50,
+              mass: 0.8,
+            }}
           >
             <h1 className="text-3xl my-3 font-segoe italic  font-black">
               Used and trusted by a community of millions
