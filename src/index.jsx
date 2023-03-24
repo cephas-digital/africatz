@@ -36,10 +36,12 @@ const Page = () => {
               initial={{ scaleX: 0.5, scaleY: 0.3, opacity: 0.3 }}
               animate={{ opacity: 1, scaleX: 1.0, scaleY: 1 }}
               transition={{
-                type: "spring",
-                stiffness: 100,
+                type: "tween",
+                stiffness: 1000,
+                bounce: 0.5,
+                damping: 100,
                 duration: 1.2,
-                delay: 0.1,
+                delay: 0.05,
               }}
               className="font-segoe  text-4xl leading-snug md:text-5xl  tracking-wide font-bold leading-loose"
             >
