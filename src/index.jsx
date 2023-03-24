@@ -31,9 +31,9 @@ const Page = () => {
       >
         <Header />
         <section className=" relative block md:flex py-1 justify-between items-center">
-          <div className="max-w-xl mt-10  ">
+          <div className="md:max-w-xl w-full mt-10  ">
             <motion.h1
-              style={{ lineHeight: "4.5rem" }}
+              // style={{ lineHeight: "4.5rem" }}
               initial={{ scaleX: 0.5, scaleY: 0.3, opacity: 0.3 }}
               animate={{ opacity: 1, scaleX: 1.0, scaleY: 1 }}
               transition={{
@@ -43,18 +43,18 @@ const Page = () => {
                 stiffness: 50,
                 mass: 0.8,
               }}
-              className="font-poppins  text-3xl leading-loose md:text-5xl   font-medium "
+              className="font-nunito  text-3xl leading-snug md:text-5xl   font-medium "
             >
               Fast and secure checkout process for a hassle-free shopping
             </motion.h1>
 
-            <h1 className="font-poppins   text-4xl leading-snug md:text-5xl  tracking-wide font-bold leading-loose bg-primary p-0.5 w-fit">
+            <h1 className="font-poppins mb-10  text-4xl leading-tight md:text-5xl  tracking-wide font-bold leading-loose bg-primary p-0.5 w-fit">
               experience
-            </h1>s
+            </h1>
 
-            <h6 className="my-5 font-poppins tracking-widest leading-loose font-normal">
+            <p className="my-5 font-poppins text-sm tracking-widest leading-loose font-normal">
               Explore our wide range of products and services
-            </h6>
+            </p>
             <section className="flex my-20 md:my-10">
               <div className="flex md:w-40 w-32 cursor-pointer  mr-5 items-center justify-around primary-gradient p-1 md:p-2">
                 <BsApple size={25} />
@@ -100,11 +100,18 @@ const Page = () => {
           </div>
         </section>
       </section>
-      <section className="py-4 px-3 md:px-8 lg:px-24 bg-secondary">
+      <section className="py-2 px-3 md:px-8 lg:px-24 bg-secondary">
         <motion.h1
           initial={{ opacity: 0, scaleX: 0.3, scaleY: 0.3 }}
-          whileInView={{ opacity: 1, scaleX: 1.0, scaleY: 1 }}
-          className="text-center text-3xl my-3 font-segoe italic text-darker font-black"
+          whileInView={{ opacity: 1, scaleX: 1, scaleY: 1 }}
+          transition={{
+            duration: 1.5,
+            ease: "easeIn",
+            type: "spring",
+            stiffness: 50,
+            mass: 0.8,
+          }}
+          className="text-center text-3xl my-2 font-segoe italic text-darker font-black"
         >
           Our Top Partners
         </motion.h1>
