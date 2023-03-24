@@ -48,9 +48,20 @@ const Page = () => {
               Fast and secure checkout process for a hassle-free shopping
             </motion.h1>
 
-            <h1 className="font-poppins mb-10  text-4xl leading-tight md:text-5xl  tracking-wide font-bold leading-loose bg-primary p-0.5 w-fit">
+            <motion.h1
+              initial={{ scaleX: 0.5, scaleY: 0.3, opacity: 0.3 }}
+              animate={{ opacity: 1, scaleX: 1.0, scaleY: 1 }}
+              transition={{
+                duration: 1.5,
+                ease: "easeIn",
+                type: "spring",
+                stiffness: 50,
+                mass: 0.8,
+              }}
+              className="font-poppins mb-10  text-4xl leading-tight md:text-5xl  tracking-wide font-bold leading-loose bg-primary p-0.5 w-fit"
+            >
               experience
-            </h1>
+            </motion.h1>
 
             <p className="my-5 font-poppins text-sm tracking-widest leading-loose font-normal">
               Explore our wide range of products and services
