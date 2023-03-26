@@ -7,6 +7,13 @@ const Contact = () => {
       <motion.div
         initial={{ opacity: 0, scaleX: 0.3, scaleY: 0.3 }}
         whileInView={{ opacity: 1, scaleX: 1.0, scaleY: 1 }}
+        transition={{
+          duration: 1.5,
+          ease: "easeIn",
+          type: "spring",
+          stiffness: 50,
+          mass: 0.8,
+        }}
       >
         <h1 className="text-center text-3xl my-3 font-segoe italic text-darker font-black">
           Contact Us
