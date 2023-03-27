@@ -95,6 +95,14 @@ const About = () => {
           <motion.img
             initial={{ x: -1000 }}
             whileInView={{ x: 0 }}
+            whileInView={{ opacity: 1, scaleX: 1.0, scaleY: 1 }}
+            transition={{
+              duration: 1.5,
+              ease: "easeIn",
+              type: "spring",
+              stiffness: 50,
+              mass: 0.8,
+            }}
             src={AboutImg}
             className="md:block hidden"
             alt="product_image"

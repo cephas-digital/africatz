@@ -48,7 +48,7 @@ export const ProjectData = [
 
   {
     title: "Customers",
-    value: "200+",
+    value: "20+",
   },
 ];
 

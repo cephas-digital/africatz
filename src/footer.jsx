@@ -17,9 +17,8 @@ const Footer = () => {
           <div className="max-w-sm md:mb-0 mb-10">
             <Logo />
             <p className="my-5">
-              Lorem ipsum dolor sit amet consectetur adipiscin eli a sit
-              facilisis volutpat interdum non a magna tempus amet velit dolor
-              sit.
+            Africartz is aspiring to emerge as the largest and most renowned
+              online retailing platform for trade in Africa at large.
             </p>
             <ButtonComponent title="Get Started" />
           </div>

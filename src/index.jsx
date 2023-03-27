@@ -14,6 +14,9 @@ import Contact from "./contact";
 import { BsApple } from "react-icons/bs";
 import { IoLogoGooglePlaystore } from "react-icons/io5";
 
+import meyer from "./assets/meyer.png";
+import montecarlo from "./assets/montecarlo.jpg";
+import rostrum from "./assets/rostrum.jpeg";
 import shoprite from "./assets/shoprite.png";
 import jumia from "./assets/jumia.png";
 import ace from "./assets/ace.png";
@@ -128,11 +131,38 @@ const Page = () => {
         </motion.h1>
         <marquee>
           <div className="flex flex-wrap items-center justify-between my-6">
-            <img className="md:w-auto w-12" src={shoprite} alt="shoprite" />
-            <img className="md:w-auto w-12" src={jumia} alt="jumia" />
-            <img className="md:w-auto w-12" src={ace} alt="ace" />
-            <img className="md:w-auto w-12" src={brent} alt="brent" />
-            <img className="md:w-auto w-12" src={ace} alt="ace" />
+            <img
+              className="md:w-24 rounded-full w-12"
+              src={meyer}
+              alt="meyer"
+            />
+            <img
+              className="md:w-24 rounded-full w-12"
+              src={rostrum}
+              alt="rostrum"
+            />
+            <img
+              className="md:w-24 rounded-full w-12"
+              src={montecarlo}
+              alt="montecarlo"
+            />
+            <img
+              className="md:w-24 rounded-full w-12"
+              src={meyer}
+              alt="meyer"
+            />
+            <img
+              className="md:w-24 rounded-full w-12"
+              src={rostrum}
+              alt="rostrum"
+            />
+            <img
+              className="md:w-24 rounded-full w-12"
+              src={montecarlo}
+              alt="montecarlo"
+            />
+            {/* <img className="md:w-auto w-12" src={brent} alt="brent" />
+            <img className="md:w-auto w-12" src={ace} alt="ace" /> */}
           </div>
         </marquee>
       </section>

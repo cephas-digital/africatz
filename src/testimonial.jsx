@@ -1,5 +1,6 @@
 import { TestimonialsData } from "./data";
 import { motion } from "framer-motion";
+import { RxAvatar } from "react-icons/rx";
 const Testimonials = () => {
   return (
     <main className="py-10 bg-darker text-white my-10 px-3 md:px-8 lg:px-24">
@@ -28,10 +29,11 @@ const Testimonials = () => {
                   {data.content}
                 </p>
                 <div className="flex my-4 justify-between items-center">
-                  <img src={data.img} alt={data.username} />
+                  <RxAvatar size={30} />
+                  {/* <img src={data.img} alt={data.username} /> */}
                   <div>
                     <h2>{data.username}</h2>
-                    <h2>{data.userTitle}</h2>
+                    {/* <h2>{data.userTitle}</h2> */}
                   </div>
                 </div>
               </motion.div>
