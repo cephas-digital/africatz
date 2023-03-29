@@ -88,7 +88,12 @@ const Page = () => {
                 <div>
                   {" "}
                   <p className="text-xs">Available Now</p>
-                  <h2 className="text-base font-medium">Play Store</h2>
+                  <h2 className="text-base font-medium">
+                    {" "}
+                    <a href="https://play.google.com/store/apps/details?id=com.africartzstore.com">
+                      Play Store
+                    </a>
+                  </h2>
                 </div>
               </a>
             </section>
@@ -208,7 +213,12 @@ const Page = () => {
               <div>
                 {" "}
                 <p>Available Now</p>
-                <h2>App Store</h2>
+                <h2>
+                  {" "}
+                  <a href="https://play.google.com/store/apps/details?id=com.africartzstore.com">
+                    Play Store
+                  </a>
+                </h2>
               </div>
             </div>
           </section>

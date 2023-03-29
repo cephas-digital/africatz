@@ -20,7 +20,9 @@ const Footer = () => {
               Africartz is aspiring to emerge as the largest and most renowned
               online retailing platform for trade in Africa at large.
             </p>
-            <ButtonComponent title="Get Started" />
+            <a href="https://play.google.com/store/apps/details?id=com.africartzstore.com">
+              <ButtonComponent title="Get Started" />
+            </a>
           </div>
           <nav className="flex flex-col">
             <ScrollIntoView className="py-3" selector="#home">
@@ -50,7 +52,7 @@ const Footer = () => {
           </nav>
           <hr />
           <nav className="flex flex-col">
-            <a className="py-3" href="mail:Admin@africartz.ng">
+            <a className="py-3" href="mailto:Admin@africartz.ng">
               Admin@africartz.ng
             </a>
             <a className="py-3" href="#">

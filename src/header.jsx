@@ -33,7 +33,9 @@ const Header = () => {
       </header>
       <header className="md:hidden flex  items-center justify-between">
         <Logo />
-        <ButtonComponent title="Get started" mode="light" />
+        <a href="https://play.google.com/store/apps/details?id=com.africartzstore.com">
+          <ButtonComponent title="Get started" mode="light" />
+        </a>
         <div className="top-1/2 fixed z-10 pr-5 bg-primary rounded-full p-2 -right-4">
           <GiCancel onClick={() => setOpen(!open)} color="white" />
         </div>
