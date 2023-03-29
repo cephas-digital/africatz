@@ -48,7 +48,7 @@ export const ProjectData = [
 
   {
     title: "Customers",
-    value: "20+",
+    value: "20k+",
   },
 ];
 
@@ -57,21 +57,21 @@ export const TestimonialsData = [
     content:
       "Great online store, I've been able to get a lot of items at a good prices, And they were exactly what I ordered for",
     username: "John Bima",
-    userTitle: "User Title",
+
     img: testifier,
   },
   {
     content:
       "Thanks to this e-commerce platform, I was able to find everything I needed in one place. Their selection is amazing and the checkout process was a breeze",
     username: "Tunji Oladeji",
-    userTitle: "User Title",
+
     img: testifier,
   },
   {
     content:
       "Africartz is a good shopping app with good tracking system. Excellent product description and service delivery ",
-    username: "username",
-    userTitle: "User Title",
+    username: "Thomas Nelson",
+
     img: testifier,
   },
 ];

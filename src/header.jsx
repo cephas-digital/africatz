@@ -27,8 +27,9 @@ const Header = () => {
             </label>
           </ScrollIntoView>
         </div>
-
-        <ButtonComponent title="Get started" mode="light" />
+        <a href="https://play.google.com/store/apps/details?id=com.africartzstore.com">
+          <ButtonComponent title="Get started" mode="light" />
+        </a>
       </header>
       <header className="md:hidden flex  items-center justify-between">
         <Logo />

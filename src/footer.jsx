@@ -17,7 +17,7 @@ const Footer = () => {
           <div className="max-w-sm md:mb-0 mb-10">
             <Logo />
             <p className="my-5">
-            Africartz is aspiring to emerge as the largest and most renowned
+              Africartz is aspiring to emerge as the largest and most renowned
               online retailing platform for trade in Africa at large.
             </p>
             <ButtonComponent title="Get Started" />
@@ -50,8 +50,8 @@ const Footer = () => {
           </nav>
           <hr />
           <nav className="flex flex-col">
-            <a className="py-3" href="#">
-              africartz@gmail.com
+            <a className="py-3" href="mail:Admin@africartz.ng">
+              Admin@africartz.ng
             </a>
             <a className="py-3" href="#">
               +234 111 222 333

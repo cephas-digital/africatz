@@ -79,7 +79,10 @@ const Page = () => {
                   <h2 className="text-base font-medium">App Store</h2>
                 </div>
               </div>
-              <div className="flex md:w-40 w-32 cursor-pointer mr-5 items-center justify-around primary-gradient p-1 md:p-2">
+              <a
+                href="https://play.google.com/store/apps/details?id=com.africartzstore.com"
+                className="flex md:w-40 w-32 cursor-pointer mr-5 items-center justify-around primary-gradient p-1 md:p-2"
+              >
                 <IoLogoGooglePlaystore size={25} />
 
                 <div>
@@ -87,13 +90,13 @@ const Page = () => {
                   <p className="text-xs">Available Now</p>
                   <h2 className="text-base font-medium">Play Store</h2>
                 </div>
-              </div>
+              </a>
             </section>
           </div>
 
           <div className=" relative    ">
             <motion.img
-              initial={{ opacity: 0, scaleX: 0.3, scaleY: 0.3 }}
+              initial={{ opacity: 0, scaleX: -0.5, scaleY: -0.5 }}
               whileInView={{ opacity: 1, scaleX: 1.0, scaleY: 1 }}
               transition={{
                 duration: 1.5,

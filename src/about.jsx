@@ -79,7 +79,21 @@ const About = () => {
         </section>
         <section>
           <motion.img
-            initial={{ opacity: 0, scaleX: 0.3, scaleY: 0.3 }}
+            initial={{ x: " -1000px" }}
+            whileInView={{ x: 0 }}
+            transition={{
+              duration: 1.5,
+              ease: "easeIn",
+              type: "spring",
+              stiffness: 50,
+              mass: 0.8,
+            }}
+            src={AboutImg}
+            className="md:block hidden"
+            alt="product_image"
+          />
+          <motion.img
+            initial={{ scaleX: -0.5, scaleY: -0.5 }}
             whileInView={{ opacity: 1, scaleX: 1.0, scaleY: 1 }}
             transition={{
               duration: 1.5,
@@ -90,21 +104,6 @@ const About = () => {
             }}
             src={AboutImg}
             className="md:hidden block"
-            alt="product_image"
-          />
-          <motion.img
-            initial={{ x: -1000 }}
-            whileInView={{ x: 0 }}
-            whileInView={{ opacity: 1, scaleX: 1.0, scaleY: 1 }}
-            transition={{
-              duration: 1.5,
-              ease: "easeIn",
-              type: "spring",
-              stiffness: 50,
-              mass: 0.8,
-            }}
-            src={AboutImg}
-            className="md:block hidden"
             alt="product_image"
           />
         </section>
