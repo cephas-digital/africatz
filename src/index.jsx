@@ -71,6 +71,10 @@ const Page = () => {
             </p>
             <section className="flex my-20 md:my-10">
               <div className="flex md:w-40 w-32 cursor-pointer  mr-5 items-center justify-around primary-gradient p-1 md:p-2">
+                  <a
+                href="https://apps.apple.com/ng/app/africartz/id6447208348"
+                className="flex md:w-40 w-32 cursor-pointer mr-5 items-center justify-around primary-gradient p-1 md:p-2"
+              >
                 <BsApple size={25} />
                 {/* <img className="w-4" src={apple} alt="appstore" /> */}
                 <div>
@@ -78,6 +82,7 @@ const Page = () => {
                   <p className="text-xs">Available Now</p>
                   <h2 className="text-base font-medium">App Store</h2>
                 </div>
+</a>
               </div>
               <a
                 href="https://play.google.com/store/apps/details?id=com.africartzstore.com"
