@@ -29,9 +29,9 @@ const About = () => {
               }}
               className="py-3 leading-relaxed tracking-wider"
             >
-              Africartz is a gigantic online Global E-commerce advertising
+              Africartz is the Best multivendor e-commerce
               platform (“App”) in Africa designed for right vendors to provide,
-              advertise and sell good unrivalled quality commodities (“Products”
+              advertise and sell quality African made products (“Products”
               “Services” “Publications”) as well as branded products that can
               cater for demand to the emerging African consumer.{" "}
             </motion.p>
@@ -47,9 +47,10 @@ const About = () => {
               }}
               className="py-3 leading-relaxed tracking-wider"
             >
+              Africartz is an online shopping platform where you can shop Online for Electronics, Phones, Computers, Accessories, Fashion, Shoes, Household Equipments, Wines, Babies, Toys, Furnitures, Groceries, Sport and Fitness, Books and more in Nigeria from top brands with 100% satisfaction and fast shipping.
               Africartz has brought convenience and reliability to the African
               retail market by combining open thoughts with considerable market
-              research. Additionally, the local vendors can also benefit from
+              research. Additionally, the local vendors can begin to make money online by benefitting from
               the improved access to a country-wide market, where they can set
               their own prices and other key details.{" "}
             </motion.p>{" "}
@@ -67,10 +68,7 @@ const About = () => {
             >
               Africartz is aspiring to emerge as the largest and most renowned
               online retailing platform for trade in Africa at large. Africartz
-              has decided to employ payment on delivery services. This gives
-              customers the assurance and liberty that the quality of the
-              product they ordered can be checked on delivery before proceeding
-              with the payment.{" "}
+              has decided to employ payment on delivery services. On Africartz, you can buy and sell beverages, cosmetics, phones and electronics, Furnitures, Sport and Fitness items, Cars, Stationeries, Household Equipments, etc.{" "}
             </motion.p>
           </div>
           <div className="my-3">
