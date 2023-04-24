@@ -95,7 +95,7 @@ const Page = () => {
                   <p className="text-xs">Available Now</p>
                   <h2 className="text-base font-medium">
                     {" "}
-                    <a href="https://play.google.com/store/apps/details?id=com.africartzstore.com">
+                    <a href="https://play.google.com/store/apps/details?id=com.africartzng.com">
                       Play Store
                     </a>
                   </h2>
