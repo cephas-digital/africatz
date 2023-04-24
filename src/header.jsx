@@ -2,13 +2,14 @@ import Logo from "./components/logo";
 import ButtonComponent from "./components/button";
 import { GiCancel } from "react-icons/gi";
 import ScrollIntoView from "react-scroll-into-view";
+import {Outlet} from 'react-router-dom'
 
 import { useState } from "react";
 const Header = () => {
   const [open, setOpen] = useState(false);
   return (
     <>
-      <header className="md:flex hidden items-center justify-between">
+      <header className="md:flex hidden items-center justify-between absolute inset-x-0 text-white px-3 md:px-8 top-4 lg:px-24">
         <div className="flex  z-10 items-center p-2 basis-2/5 justify-between ">
           <Logo />
           <ScrollIntoView selector="#home">
@@ -31,7 +32,7 @@ const Header = () => {
           <ButtonComponent title="Get started" mode="light" />
         </a>
       </header>
-      <header className="md:hidden flex  items-center justify-between">
+      <header className="md:hidden flex  items-center justify-between absolute inset-x-0 px-3 md:px-8 lg:px-24 pt-10">
         <Logo />
         <a href="https://play.google.com/store/apps/details?id=com.africartzstore.com">
           <ButtonComponent title="Get started" mode="light" />
@@ -44,7 +45,7 @@ const Header = () => {
             open ? "mobile-nav__open" : "mobile-nav__close"
           }   z-10  bg-darkest`}
         >
-          <div className="text-xl flex  h-[100vh] leading-loose tracking-widest flex-col items-center justify-center font-black font-rubik">
+          <div className="text-xl flex  h-[100vh] leading-loose tracking-widest flex-col items-center justify-center font-black font-rubik text-white">
             <div onClick={() => setOpen(!open)} className="my-4">
               {" "}
               <ScrollIntoView selector="#home">Home</ScrollIntoView>
@@ -59,6 +60,7 @@ const Header = () => {
           </div>
         </aside>
       </header>
+      <Outlet />
     </>
   );
 };

@@ -1,6 +1,7 @@
 import Logo from "./components/logo";
 import Header from "./header";
 import Footer from "./footer";
+import SiteMap from "./sitemap";
 import herobg from "./assets/hero_image.png";
 import blur_light from "./assets/blur_light.png";
 
@@ -10,7 +11,6 @@ import Projects from "./projects";
 import Testimonial from "./testimonial";
 import Faqs from "./faqs";
 import Contact from "./contact";
-
 import { BsApple } from "react-icons/bs";
 import { IoLogoGooglePlaystore } from "react-icons/io5";
 
@@ -32,8 +32,7 @@ const Page = () => {
         id="home"
         className="bg-darkest md:h-fit lg:h-screen py-4 px-3 md:px-8 lg:px-24 text-white"
       >
-        <Header />
-        <section className=" relative block md:flex py-1 justify-between items-center">
+        <section className=" relative block md:flex pt-20 py-1 justify-between items-center">
           <div className="md:max-w-xl w-full mt-10  ">
             <motion.h1
               // style={{ lineHeight: "4.5rem" }}
@@ -229,6 +228,7 @@ const Page = () => {
           </section>
         </motion.div>
       </section>
+      {/* <SiteMap /> */}
       <Footer />
     </main>
   );
