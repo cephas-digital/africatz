@@ -52,17 +52,27 @@ const Footer = () => {
           </nav>
           <hr />
           <nav className="flex flex-col">
-            <a className="py-3" href="mailto:Admin@africartz.ng">
-              Admin@africartz.ng
+            <a className="py-3" href="mailto:africartzstore@gmail.com">
+              africartzstore@gmail.com
             </a>
-            <a className="py-3" href="#">
-              +234 111 222 333
+            <a className="py-3" href="tel:+2348139797330">
+              +234 813 979 7330
             </a>
           </nav>
           <nav className="flex py-3 self-start justify-between items-center">
-            <img className="mr-4" src={linkedin} alt="linkedin" />
+            <a className="mr-4 text-xl" href="https://www.instagram.com/africartz/" target="_blank" rel="noopener noreferrer">
+              <i className="fab fa-instagram"></i>
+            </a>
+            <a className="mr-4 text-xl" href="https://www.facebook.com/africartz" target="_blank" rel="noopener noreferrer">
+              <i className="fab fa-facebook"></i>
+            </a>
+            <a className="mr-4 text-xl" href="https://twitter.com/AfricartStore" target="_blank" rel="noopener noreferrer">
+              <i className="fab fa-twitter"></i>
+            </a>
+
+            {/* <img className="mr-4" src={linkedin} alt="linkedin" />
             <img className="mr-4" src={messenger} alt="messenger" />
-            <img className="mr-4" src={twitter} alt="twitter" />
+            <img className="mr-4" src={twitter} alt="twitter" /> */}
           </nav>
         </section>
         <section className="bg-darkest text-white p-5 text-center">
