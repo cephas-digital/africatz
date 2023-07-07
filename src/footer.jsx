@@ -20,9 +20,9 @@ const Footer = () => {
               Africartz is aspiring to emerge as the largest and most renowned
               online retailing platform for trade in Africa at large.
             </p>
-            <a href="https://play.google.com/store/apps/details?id=com.africartzstore.com">
+            {/* <a href="https://play.google.com/store/apps/details?id=com.africartzstore.com">
               <ButtonComponent title="Get Started" />
-            </a>
+            </a> */}
           </div>
           <nav className="flex flex-col">
             <ScrollIntoView className="py-3" selector="#home">
@@ -43,26 +43,36 @@ const Footer = () => {
           </nav>
           <hr />
           <nav className="flex flex-col">
-            <a className="py-3" href="#">
+            <a className="py-3" href="https://africartz-web.vercel.app/terms-and-conditions">
               Terms of Service
             </a>
-            <a className="py-3" href="#">
-              Privacy
+            <a className="py-3" href="mailto:africartzstore@gmail.com">
+              Support
             </a>
           </nav>
           <hr />
           <nav className="flex flex-col">
-            <a className="py-3" href="mailto:Admin@africartz.ng">
-              Admin@africartz.ng
+            <a className="py-3" href="mailto:africartzstore@gmail.com">
+              africartzstore@gmail.com
             </a>
-            <a className="py-3" href="#">
-              +234 111 222 333
+            <a className="py-3" href="tel:+2348139797330">
+              +234 813 979 7330
             </a>
           </nav>
           <nav className="flex py-3 self-start justify-between items-center">
-            <img className="mr-4" src={linkedin} alt="linkedin" />
+            <a className="mr-4 text-xl" href="https://www.instagram.com/africartz/" target="_blank" rel="noopener noreferrer">
+              <i className="fab fa-instagram"></i>
+            </a>
+            <a className="mr-4 text-xl" href="https://www.facebook.com/africartz" target="_blank" rel="noopener noreferrer">
+              <i className="fab fa-facebook"></i>
+            </a>
+            <a className="mr-4 text-xl" href="https://twitter.com/AfricartStore" target="_blank" rel="noopener noreferrer">
+              <i className="fab fa-twitter"></i>
+            </a>
+
+            {/* <img className="mr-4" src={linkedin} alt="linkedin" />
             <img className="mr-4" src={messenger} alt="messenger" />
-            <img className="mr-4" src={twitter} alt="twitter" />
+            <img className="mr-4" src={twitter} alt="twitter" /> */}
           </nav>
         </section>
         <section className="bg-darkest text-white p-5 text-center">

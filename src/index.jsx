@@ -85,7 +85,7 @@ const Page = () => {
 </a>
               </div>
               <a
-                href="https://play.google.com/store/apps/details?id=com.africartzstore.com"
+                href="https://play.google.com/store/apps/details?id=com.africartzng.com"
                 className="flex md:w-40 w-32 cursor-pointer mr-5 items-center justify-around primary-gradient p-1 md:p-2"
               >
                 <IoLogoGooglePlaystore size={25} />
@@ -142,9 +142,25 @@ const Page = () => {
         >
           Our Top Partners
         </motion.h1>
-        <marquee>
-          <div className="flex flex-wrap items-center justify-between my-6">
+        {/* <marquee> */}
+          <div className="flex flex-wrap items-center justify-around my-6">
             <img
+              className="md:w-24 rounded-full w-12"
+              src={meyer}
+              alt="meyer"
+            />
+            <img
+              className="md:w-24 rounded-full w-12"
+              src={rostrum}
+              alt="rostrum"
+              style={{ width: '15rem' }}
+            />
+            <img
+              className="md:w-24 rounded-full w-12"
+              src={montecarlo}
+              alt="montecarlo"
+            />
+            {/* <img
               className="md:w-24 rounded-full w-12"
               src={meyer}
               alt="meyer"
@@ -158,26 +174,11 @@ const Page = () => {
               className="md:w-24 rounded-full w-12"
               src={montecarlo}
               alt="montecarlo"
-            />
-            <img
-              className="md:w-24 rounded-full w-12"
-              src={meyer}
-              alt="meyer"
-            />
-            <img
-              className="md:w-24 rounded-full w-12"
-              src={rostrum}
-              alt="rostrum"
-            />
-            <img
-              className="md:w-24 rounded-full w-12"
-              src={montecarlo}
-              alt="montecarlo"
-            />
+            /> */}
             {/* <img className="md:w-auto w-12" src={brent} alt="brent" />
             <img className="md:w-auto w-12" src={ace} alt="ace" /> */}
           </div>
-        </marquee>
+        {/* </marquee> */}
       </section>
 
       <Services />
@@ -209,7 +210,12 @@ const Page = () => {
               <div>
                 {" "}
                 <p className="text-xs">Available Now</p>
-                <h2>App Store</h2>
+                <h2>
+                  {" "}
+                  <a href="https://apps.apple.com/ng/app/africartz/id6447208348">
+                    App Store
+                  </a>
+                </h2>
               </div>
             </div>
             <div className="flex w-40 cursor-pointer mr-5 items-center justify-around text-white bg-darkest p-2">
@@ -220,7 +226,7 @@ const Page = () => {
                 <p>Available Now</p>
                 <h2>
                   {" "}
-                  <a href="https://play.google.com/store/apps/details?id=com.africartzstore.com">
+                  <a href="https://play.google.com/store/apps/details?id=com.africartzng.com">
                     Play Store
                   </a>
                 </h2>
