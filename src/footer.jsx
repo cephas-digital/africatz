@@ -20,9 +20,9 @@ const Footer = () => {
               Africartz is aspiring to emerge as the largest and most renowned
               online retailing platform for trade in Africa at large.
             </p>
-            <a href="https://play.google.com/store/apps/details?id=com.africartzstore.com">
+            {/* <a href="https://play.google.com/store/apps/details?id=com.africartzstore.com">
               <ButtonComponent title="Get Started" />
-            </a>
+            </a> */}
           </div>
           <nav className="flex flex-col">
             <ScrollIntoView className="py-3" selector="#home">
@@ -43,11 +43,11 @@ const Footer = () => {
           </nav>
           <hr />
           <nav className="flex flex-col">
-            <a className="py-3" href="#">
+            <a className="py-3" href="https://africartz-web.vercel.app/terms-and-conditions">
               Terms of Service
             </a>
-            <a className="py-3" href="#">
-              Privacy
+            <a className="py-3" href="mailto:africartzstore@gmail.com">
+              Support
             </a>
           </nav>
           <hr />

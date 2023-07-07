@@ -142,9 +142,25 @@ const Page = () => {
         >
           Our Top Partners
         </motion.h1>
-        <marquee>
-          <div className="flex flex-wrap items-center justify-between my-6">
+        {/* <marquee> */}
+          <div className="flex flex-wrap items-center justify-around my-6">
             <img
+              className="md:w-24 rounded-full w-12"
+              src={meyer}
+              alt="meyer"
+            />
+            <img
+              className="md:w-24 rounded-full w-12"
+              src={rostrum}
+              alt="rostrum"
+              style={{ width: '15rem' }}
+            />
+            <img
+              className="md:w-24 rounded-full w-12"
+              src={montecarlo}
+              alt="montecarlo"
+            />
+            {/* <img
               className="md:w-24 rounded-full w-12"
               src={meyer}
               alt="meyer"
@@ -158,26 +174,11 @@ const Page = () => {
               className="md:w-24 rounded-full w-12"
               src={montecarlo}
               alt="montecarlo"
-            />
-            <img
-              className="md:w-24 rounded-full w-12"
-              src={meyer}
-              alt="meyer"
-            />
-            <img
-              className="md:w-24 rounded-full w-12"
-              src={rostrum}
-              alt="rostrum"
-            />
-            <img
-              className="md:w-24 rounded-full w-12"
-              src={montecarlo}
-              alt="montecarlo"
-            />
+            /> */}
             {/* <img className="md:w-auto w-12" src={brent} alt="brent" />
             <img className="md:w-auto w-12" src={ace} alt="ace" /> */}
           </div>
-        </marquee>
+        {/* </marquee> */}
       </section>
 
       <Services />
