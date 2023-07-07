@@ -71,9 +71,9 @@ const About = () => {
               has decided to employ payment on delivery services. On Africartz, you can buy and sell beverages, cosmetics, phones and electronics, Furnitures, Sport and Fitness items, Cars, Stationeries, Household Equipments, etc.{" "}
             </motion.p>
           </div>
-          <div className="my-3">
+          {/* <div className="my-3">
             <ButtonComponent title="Learn More" />
-          </div>
+          </div> */}
         </section>
         <section>
           <motion.img
